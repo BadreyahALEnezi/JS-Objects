@@ -1,15 +1,12 @@
-
 //Task 1) Create an object named 'book' using curly braces {} that includes the information above.
- const book = {
-    title : "JavaScript: The Definitive Guide",
-    Author: "David Flanagan",
-    "Published Year": 2020,
-    Genre: "Programming",
-
-}
+const book = {
+  title: "JavaScript: The Definitive Guide",
+  Author: "David Flanagan",
+  "Published Year": 2020,
+  Genre: "Programming",
+};
 //console.log(book.title);
 //console.log(book["Published Year"]);
-
 
 /*****************************************************************
 Part 2: Modifying Objects
@@ -27,9 +24,8 @@ Task 5) Modify the 'publishedYear' to 2021 as a new edition has been released.
 
 book.pageCount = 1096;
 book.ISBN = "978-1491952023";
-book["Published Year"] = 2021 ;
+book["Published Year"] = 2021;
 //console.log(book);
-
 
 /*****************************************************************
 Part 3: Advanced Object Operations 
@@ -44,9 +40,11 @@ Task 7) Add a 'reviews' property to the 'book' object, which will store an array
         Start with one review: {reviewer: "Book Critic", comment: "A comprehensive guide to JavaScript."}.
 ******************************************************************/
 
-
 book.Author = ["David Flanagan", "BaDooRa"];
-book.reviews = ["review"];
-book.review = {reviewer: "Book Critic", comment: "A comprehensive guide to JavaScript."}
+
+book.reviews = [
+  { reviewer: "Book Critic", comment: "A comprehensive guide to JavaScript." },
+  { reviewer: "anwar", comment: "good book" },
+];
 
 console.log(book);
